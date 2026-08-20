@@ -18,8 +18,7 @@
 
        }
         .AC1{
-            background-color: rgb(8, 5, 175);
-            max-width: 45vw;
+            background-color: #0805af;
             color: beige;
             border: 3px double black;
             padding: 7px;
@@ -45,4 +44,16 @@
         .dv2{
             margin: 300px 50px;
         }
+        #im2{
+            width: 125px;
+            height: 100px;
+        }
         
+        .bt1{
+            background-color: #44da4e;
+            border-radius: 7px;
+        }
+        .bt2{
+            background-color: red;
+            border-radius: 7px;
+        }

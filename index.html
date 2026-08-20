@@ -22,27 +22,62 @@
 
             <section class="container">
                 <article class="AC1">
-                    <img src="images.jpeg" width="150px" alt="img1">
+                    <img src="IMG/images.jpeg"  width="100px" height="100px" alt="img1">
                     <div>
                         <h2>Meu primeiro post</h2>
                         <p> Aqui compartilharei conteúdo e curiosidades sobre tecnologia!</p>
-
+                        <button  class="bt1">👍 <span>0</span> </button>
+                        <button class="bt2">🖕 <span>0</span> </button>
                     </div>
                 </article>
                 <article class="AC2">
+                    <img src="IMG/filme.jpeg" id="im2" alt="img de livro">
                     <div>
                         <h2>Meu segundo post</h2>
-                        <p>Aqui falarei sobre livros</p>
+                        <p>Aqui falarei sobre obras que gosto e quero resenhar em cima delas.</p>
+                        <button class="bt1">👍 <span>0</span> </button>
+                        <button class="bt2"">🖕 <span>0</span> </button>
                     </div>
 
                 </article>
 
             </section>
-            <div class="dv2">
-                <b><mark>feito por Felipe M Brandelik</mark></b>
-            </div>
 
+            
         </main>
-
+        <footer>
+            <div class="dv2">
+                <b><mark> &copy;Felipe M Brandelik</mark></b>
+            </div>
+        </footer>
+        
     </body>
+    <script>
+
+            const botoes = document.querySelectorAll("button");
+            botoes.forEach(function(botao) {
+                let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+        
+
+            function botaoClicado() {
+                console.log("tomei no butao");
+                let texto = botao.querySelector("span");
+                if (curtiu === false){
+                texto.textContent++; 
+                curtiu = true;  
+                }
+                else{
+                    texto.textContent--;
+                    curtiu = false;
+                }
+                
+            }});
+
+
+
+
+
+    </script>
+
 </html>
